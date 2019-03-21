@@ -104,6 +104,35 @@ span {
   align-items: center;
   justify-content: center;
 }
+.scroll-container {
+  display: none;
+    background:black;
+    width: 90vw;
+    height: 250px;
+    padding: 5px;
+  /*   overflow: hidden; */
+    overflow: auto;
+}
+
+.container {
+  background:grey;
+  height: 240px;
+  width: 12000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container .projects {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .grid {
   width: 960px;
   height: 600px;
@@ -117,6 +146,26 @@ span {
   top:0px;
   left: 65%;
 }
+.mobile-nav {
+  display: none;
+}
+.logo-mobile1 {
+  display: none;
+}
+.logo-mobile2 {
+  display: none;
+}
+.logo-mobile3 {
+  display: none;
+}
+.logo-mobile4 {
+  display: none;
+}
+
+.logo-mobile5 {
+  display: none;
+}
+
 .navbar {
   position: fixed;
   width: 100%;
@@ -161,6 +210,7 @@ span {
   padding: 4px;
   font-size: 14px;
   color: var(--black);
+  border-radius: 10%;
 }
 .navbar .links a:hover {
   background: var(--white);
@@ -494,6 +544,10 @@ color: var(--off-white);
   font-size: 12px;
 }
 
+.scroller {
+  display: none;
+}
+
 @media only screen and (max-width: 750px) {
   body {
     font-size: 0.8rem;
@@ -539,8 +593,27 @@ color: var(--off-white);
   .logo {
    display:none;
   }
+  .logo-mobile1 {
+    display: block;
+  }
+  .logo-mobile2 {
+    display: block;
+  }
+  .logo-mobile3 {
+    display: block;
+  }
+  .logo-mobile4 {
+    display: block;
+  }
+  
+  .logo-mobile5 {
+    display: block;
+  }
+  
+
 
   .mobile-nav {
+    display: block;
     position: fixed;
     margin: 0 auto;
     right: 0;
@@ -550,7 +623,6 @@ color: var(--off-white);
     width: 100%;
     box-shadow: var(--shadow);
     background: var(--blue);
-    opacity: 0.7;
   }
 
   .mobile-nav .item-wrapper {
@@ -580,6 +652,12 @@ color: var(--off-white);
     color: var(--black);
     transform: scale(1.1);
   }
+  .mobile-nav .nav-items a:hover {
+    background: var(--white);
+    color: var(--black);
+    transform: scale(1.1);
+  }
+
   /* Links */
   .mobile-nav .links {
     margin: 2px 20px;
@@ -589,6 +667,7 @@ color: var(--off-white);
     justify-content: center;
   }
   .mobile-nav .links a {
+    border-radius: 10%;
     margin: 0 5px;
     padding: 4px;
     font-size: 14px;
@@ -652,6 +731,13 @@ color: var(--off-white);
 /* page 2 ------------------------------------- */
   .projects{
     display: none;
+  }
+
+  .scroll-container {
+    display: block;
+    grid-row: 6 / 8;
+    grid-column: 2 / 3;
+
   }
 
 /* page 3 ------------------------------------- */
