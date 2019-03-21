@@ -190,6 +190,7 @@ span {
   padding: 4px;
   font-size: 12px;
   border-radius: 10%;
+  color: var(--black)
 }
 .navbar .nav-items p:hover {
   background: var(--white);
@@ -241,8 +242,7 @@ h1 {
 .intro {
   text-align: right;
   grid-row: 4 / 5;
-  grid-column: 4 / 5;
-  padding-right: 30px;
+  grid-column: 3/ 6;
 }
 .page-down {
   grid-row: 5 / 6;
@@ -591,7 +591,22 @@ color: var(--off-white);
     grid-template-rows: repeat(10, 1fr);
     border: 2px solid var(--black)
   }
+/* modal ---------------------------------------------------- */
 
+.modal img {
+  height: 180px;
+  width: 250px;
+  margin-left: 32px;
+  margin-bottom: 30px;
+}
+.modal-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header h2 {
+  font-size: 25px;
+}
   .logo {
    display:none;
   }
@@ -725,10 +740,9 @@ color: var(--off-white);
     grid-column: 1 / 5;
   }
   .intro {
-    text-align: right;
+    text-align: center;
     grid-row: 7 / 8;
-    grid-column: 2 / 4;
-    padding-right: 30px;
+    grid-column: 1 / 4;
   }
 /* page 2 ------------------------------------- */
   .projects{
