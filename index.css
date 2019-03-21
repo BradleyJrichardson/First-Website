@@ -106,30 +106,27 @@ span {
 }
 .scroll-container {
   display: none;
-    background:black;
-    width: 90vw;
+    background:var(--offer-white);
+    width: 300px;
     height: 250px;
     padding: 5px;
   /*   overflow: hidden; */
     overflow: auto;
+
 }
 
 .container {
-  background:grey;
+  background:var(--offer-white);
   height: 240px;
   width: 12000px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
 }
 
 .container .projects {
   height: 200px;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 250px;
+  display: block;
 }
 
 
@@ -582,8 +579,8 @@ color: var(--off-white);
     border-radius: 10%;
   }
   .grid {
-    width: 380px;
-    height: 700px;
+    width: 340px;
+    height: 600px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -735,9 +732,9 @@ color: var(--off-white);
 
   .scroll-container {
     display: block;
-    grid-row: 6 / 8;
-    grid-column: 2 / 3;
-
+    grid-row: 5 / 6;
+    grid-column: 1 / 4;
+    margin-left: 15px;
   }
 
 /* page 3 ------------------------------------- */
